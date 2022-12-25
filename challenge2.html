@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> challenge 2</title>
+</head>
+<body>
+    <h1>Enter your name:</h1>
+    <input id="userInput" type = "text" > <br> <br>
+    <button onclick="myFuction()">submit</button>
+    <h1 id="theMessage">  </h1>
+
+    <style>
+        body {background-color: darkslateblue; text-align: center; color: aqua;}
+    </style>
+
+    <script>
+        function myFuction() {
+            let userInput = document.querySelector("#userInput");
+            let theMessage = document.querySelector("#theMessage");
+
+            theMessage.innerHTML = "Hello, " + userInput.value;
+
+        }
+
+    </script>
+</body>
+</html>
